@@ -3,48 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090a0d">
+    <meta name="description" content="Edrich's personal portfolio: exploring technology, programming, and creative projects.">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Edrich | Personal Portfolio</title>
 </head>
 <body>
-    <div class="Navigation">
-      <header class="navbar">
-
-        <nav>
+    <header class="navbar">
+        <a class="brand" href="#home" aria-label="EdDEV home">
+            <span class="brand-mark">E</span>
+            <span>EdDEV</span>
+        </a>
+        <nav aria-label="Main navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#skill">Skill</a>
+            <a href="#skill">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
-      </header>
+    </header>
 
-        <div class="sections">
-            <section id="home" class="hero">
-                <h1>Welcome to my website</h1>
-                <p>This is a simple personal website created using HTML and CSS. Feel free to explore the different sections to learn more about me and my skills.</p>
-            </section>
+    <main class="sections">
+        <section id="home" class="hero">
+            <p class="eyebrow"><span class="status-dot"></span> Personal portfolio</p>
+            <h1>Welcome to <span>my website.</span></h1>
+            <p class="hero-copy">Hi, I'm Edrich! I'm passionate about technology, programming, and exploring how things work. I enjoy learning new skills, building creative projects, and turning ideas into practical solutions. Welcome to my website!</p>
+            <a class="text-link" href="#about">Get to know me <span aria-hidden="true">&rarr;</span></a>
+            <span class="hero-index" aria-hidden="true">01 / 04</span>
+        </section>
 
+        <section id="about" class="content-card about-card">
+            <p class="eyebrow">A little introduction</p>
+            <div class="about-layout">
+                <div class="about-copy">
+                    <h2>About me</h2>
+                    <p>I'm passionate about technology, programming, and exploring how things work. I enjoy learning new skills and building creative projects.</p>
+                </div>
+                <figure class="portrait">
+                    <img src="ninja.jpg" alt="Portrait of Edrich">
+                </figure>
+            </div>
+        </section>
 
-            <section id="about">
-                <h1>About me</h1>
-                <p>My name is John Doe, and I am a web developer with a passion for creating interactive and user-friendly websites. I have experience in HTML, CSS, JavaScript, and various web development frameworks.</p>
-            </section>
+        <section id="skill" class="content-card">
+            <p class="eyebrow">What I work with</p>
+            <h2>Skill level</h2>
+            <p>I have a strong foundation in front-end development, with proficiency in HTML, CSS, and JavaScript. I am also familiar with back-end technologies such as Node.js and databases like MongoDB. My skill level allows me to build responsive and dynamic web applications.</p>
+            <ul class="skill-list" aria-label="Technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+            </ul>
+        </section>
 
+        <section id="contact" class="content-card contact-card">
+            <p class="eyebrow">Have a project in mind?</p>
+            <h2>Contact</h2>
+            <p>You can reach me at <a class="email-link" href="mailto:edrichnet@gmail.com">edrichnet@gmail.com</a> or through my social media profiles.</p>
+            <a class="contact-button" href="mailto:edrichnet@gmail.com">Send me an email <span aria-hidden="true">&rarr;</span></a>
+        </section>
+    </main>
 
-            <section id="skill">
-                <h1>Skill level</h1>
-                <p>I have a strong foundation in front-end development, with proficiency in HTML, CSS, and JavaScript. I am also familiar with back-end technologies such as Node.js and databases like MongoDB. My skill level allows me to build responsive and dynamic web applications.</p>
-            </section>
-
-
-            <section id="contact">
-                <h1>Contact</h1>
-                <p>You can reach me at john.doe@example.com or through my social media profiles.</p>
-            </section>
-        </div>
-
-        <footer>
-            <p>&copy; 2024 EdDEV. All rights reserved.</p>
-        </footer>
+    <footer>
+        <p id="copyright">&copy; 2024 EdDEV. All rights reserved.</p>
+        <a href="#home">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </footer>
 </body>
 </html>
